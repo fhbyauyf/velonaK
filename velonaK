@@ -76,8 +76,8 @@ UICorner.Parent = velona
 velonaName.Name = "velonaName"
 velonaName.Parent = velona
 velonaName.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-velonaName.Position = UDim2.new(0.295001, 0, 0.012478902, 0)
-velonaName.Size = UDim2.new(0.681816876, 0, 0.108917557, 0)
+velonaName.Position = UDim2.new(0.295001, 0, 0.0216357, 0)
+velonaName.Size = UDim2.new(0.681816876, 0, 0.0906531513, 0)
 
 UICorner_2.CornerRadius = UDim.new(0, 9)
 UICorner_2.Parent = velonaName
@@ -320,8 +320,8 @@ UICorner_16.Parent = avycredits
 middleBox_2.Name = "middleBox"
 middleBox_2.Parent = velona
 middleBox_2.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-middleBox_2.Position = UDim2.new(0.295001239, 0, 0.133092895, 0)
-middleBox_2.Size = UDim2.new(0.485540926, 0, 0.831029534, 0)
+middleBox_2.Position = UDim2.new(0.295001209, 0, 0.148712292, 0)
+middleBox_2.Size = UDim2.new(0.485540926, 0, 0.815410078, 0)
 
 UICorner_17.CornerRadius = UDim.new(0, 9)
 UICorner_17.Parent = middleBox_2
@@ -392,8 +392,8 @@ UICorner_21.Parent = FlyButton
 FunStuffBox.Name = "FunStuffBox"
 FunStuffBox.Parent = velona
 FunStuffBox.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-FunStuffBox.Position = UDim2.new(0.295001239, 0, 0.133092895, 0)
-FunStuffBox.Size = UDim2.new(0.485540926, 0, 0.831029534, 0)
+FunStuffBox.Position = UDim2.new(0.295001209, 0, 0.133092865, 0)
+FunStuffBox.Size = UDim2.new(0.485540926, 0, 0.831029594, 0)
 FunStuffBox.Visible = false
 
 UICorner_22.CornerRadius = UDim.new(0, 9)
@@ -420,7 +420,7 @@ TextLabel_4.TextSize = 14.000
 
 -- Scripts:
 
-local function XJKO_fake_script() -- velona.V to show/hide 
+local function NYPTEJI_fake_script() -- velona.V to show/hide 
 	local script = Instance.new('LocalScript', velona)
 
 	player = game.Players.LocalPlayer
@@ -436,8 +436,8 @@ local function XJKO_fake_script() -- velona.V to show/hide
 	end)
 	
 end
-coroutine.wrap(XJKO_fake_script)()
-local function BMOMNUZ_fake_script() -- ShowAvatar.LocalScript 
+coroutine.wrap(NYPTEJI_fake_script)()
+local function KMSDQX_fake_script() -- ShowAvatar.LocalScript 
 	local script = Instance.new('LocalScript', ShowAvatar)
 
 	local Players = game:GetService("Players")
@@ -454,8 +454,8 @@ local function BMOMNUZ_fake_script() -- ShowAvatar.LocalScript
 	
 	
 end
-coroutine.wrap(BMOMNUZ_fake_script)()
-local function ZVQJR_fake_script() -- NameUnderImage.LocalScript 
+coroutine.wrap(KMSDQX_fake_script)()
+local function FBMS_fake_script() -- NameUnderImage.LocalScript 
 	local script = Instance.new('LocalScript', NameUnderImage)
 
 	local player = game.Players.LocalPlayer
@@ -466,8 +466,8 @@ local function ZVQJR_fake_script() -- NameUnderImage.LocalScript
 	
 	
 end
-coroutine.wrap(ZVQJR_fake_script)()
-local function GAXFCFU_fake_script() -- CreditsButton.GUIHolder 
+coroutine.wrap(FBMS_fake_script)()
+local function OPGPYNA_fake_script() -- CreditsButton.GUIHolder 
 	local script = Instance.new('LocalScript', CreditsButton)
 
 	local button = script.Parent
@@ -482,8 +482,8 @@ local function GAXFCFU_fake_script() -- CreditsButton.GUIHolder
 		script.Parent.Parent.CreditsBox.Visible = true
 	end)
 end
-coroutine.wrap(GAXFCFU_fake_script)()
-local function ZSRXUBB_fake_script() -- AnimationsButton.GUIHolder 
+coroutine.wrap(OPGPYNA_fake_script)()
+local function HTQXQ_fake_script() -- AnimationsButton.GUIHolder 
 	local script = Instance.new('LocalScript', AnimationsButton)
 
 	local button = script.Parent
@@ -498,16 +498,16 @@ local function ZSRXUBB_fake_script() -- AnimationsButton.GUIHolder
 		script.Parent.Parent.CreditsBox.Visible = false
 	end)
 end
-coroutine.wrap(ZSRXUBB_fake_script)()
-local function ZPSDQT_fake_script() -- X.CloseGUI 
+coroutine.wrap(HTQXQ_fake_script)()
+local function KJWGQ_fake_script() -- X.CloseGUI 
 	local script = Instance.new('LocalScript', X)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(ZPSDQT_fake_script)()
-local function JJYK_fake_script() -- LocationsButton.GUIHolder 
+coroutine.wrap(KJWGQ_fake_script)()
+local function IMTRS_fake_script() -- LocationsButton.GUIHolder 
 	local script = Instance.new('LocalScript', LocationsButton)
 
 	local button = script.Parent
@@ -522,8 +522,8 @@ local function JJYK_fake_script() -- LocationsButton.GUIHolder
 		script.Parent.Parent.CreditsBox.Visible = false
 	end)
 end
-coroutine.wrap(JJYK_fake_script)()
-local function NFAWYJ_fake_script() -- CombatButton.GUIHolder 
+coroutine.wrap(IMTRS_fake_script)()
+local function POSNZT_fake_script() -- CombatButton.GUIHolder 
 	local script = Instance.new('LocalScript', CombatButton)
 
 	local button = script.Parent
@@ -538,8 +538,8 @@ local function NFAWYJ_fake_script() -- CombatButton.GUIHolder
 		script.Parent.Parent.CreditsBox.Visible = false
 	end)
 end
-coroutine.wrap(NFAWYJ_fake_script)()
-local function VRUB_fake_script() -- MainButton.GUIHolder 
+coroutine.wrap(POSNZT_fake_script)()
+local function PNXHTVZ_fake_script() -- MainButton.GUIHolder 
 	local script = Instance.new('LocalScript', MainButton)
 
 	local button = script.Parent
@@ -554,8 +554,8 @@ local function VRUB_fake_script() -- MainButton.GUIHolder
 		script.Parent.Parent.CreditsBox.Visible = false
 	end)
 end
-coroutine.wrap(VRUB_fake_script)()
-local function INSBVG_fake_script() -- FunStuffButton.GUIHolder 
+coroutine.wrap(PNXHTVZ_fake_script)()
+local function VVBMCU_fake_script() -- FunStuffButton.GUIHolder 
 	local script = Instance.new('LocalScript', FunStuffButton)
 
 	local button = script.Parent
@@ -570,8 +570,8 @@ local function INSBVG_fake_script() -- FunStuffButton.GUIHolder
 		script.Parent.Parent.CreditsBox.Visible = false
 	end)
 end
-coroutine.wrap(INSBVG_fake_script)()
-local function KRHEER_fake_script() -- HomeButton.GUIHolder 
+coroutine.wrap(VVBMCU_fake_script)()
+local function DHHF_fake_script() -- HomeButton.GUIHolder 
 	local script = Instance.new('LocalScript', HomeButton)
 
 	local button = script.Parent
@@ -586,8 +586,8 @@ local function KRHEER_fake_script() -- HomeButton.GUIHolder
 		script.Parent.Parent.CreditsBox.Visible = false
 	end)
 end
-coroutine.wrap(KRHEER_fake_script)()
-local function TMDJPM_fake_script() -- TextUnderOptions.LocalScript 
+coroutine.wrap(DHHF_fake_script)()
+local function DIST_fake_script() -- TextUnderOptions.LocalScript 
 	local script = Instance.new('LocalScript', TextUnderOptions)
 
 	local player = game.Players.LocalPlayer
@@ -597,8 +597,8 @@ local function TMDJPM_fake_script() -- TextUnderOptions.LocalScript
 	end
 	
 end
-coroutine.wrap(TMDJPM_fake_script)()
-local function EYUL_fake_script() -- velona.DraggableGui 
+coroutine.wrap(DIST_fake_script)()
+local function ABWMP_fake_script() -- velona.DraggableGui 
 	local script = Instance.new('LocalScript', velona)
 
 	local UIS = game:GetService('UserInputService')
@@ -637,8 +637,8 @@ local function EYUL_fake_script() -- velona.DraggableGui
 	end)
 	
 end
-coroutine.wrap(EYUL_fake_script)()
-local function ZHAAX_fake_script() -- FlyButton.FlyScript 
+coroutine.wrap(ABWMP_fake_script)()
+local function VCATPQO_fake_script() -- FlyButton.FlyScript 
 	local script = Instance.new('LocalScript', FlyButton)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -753,4 +753,4 @@ local function ZHAAX_fake_script() -- FlyButton.FlyScript
 	end)
 	
 end
-coroutine.wrap(ZHAAX_fake_script)()
+coroutine.wrap(VCATPQO_fake_script)()
