@@ -17,7 +17,7 @@ local RightBar = Instance.new("Frame")
 local UICorner_5 = Instance.new("UICorner")
 local ShowAvatar = Instance.new("ImageLabel")
 local UICorner_6 = Instance.new("UICorner")
-local NameUnderImage = Instance.new("TextLabel")
+local NameUnderShowAvatar = Instance.new("TextLabel")
 local CreditsButton = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
 local AnimationsButton = Instance.new("TextButton")
@@ -35,29 +35,31 @@ local HomeButton = Instance.new("TextButton")
 local UICorner_13 = Instance.new("UICorner")
 local version = Instance.new("TextLabel")
 local TextUnderOptions = Instance.new("TextLabel")
-local CreditsBox = Instance.new("Frame")
+local TargetBox = Instance.new("Frame")
 local UICorner_14 = Instance.new("UICorner")
-local uswaitcredits = Instance.new("TextLabel")
-local UICorner_15 = Instance.new("UICorner")
-local avycredits = Instance.new("TextLabel")
-local UICorner_16 = Instance.new("UICorner")
-local middleBox_2 = Instance.new("Frame")
-local UICorner_17 = Instance.new("UICorner")
-local AnimationsBox = Instance.new("Frame")
-local UICorner_18 = Instance.new("UICorner")
 local TextLabel_2 = Instance.new("TextLabel")
-local CombatBox = Instance.new("Frame")
-local UICorner_19 = Instance.new("UICorner")
+local AnimationsBox = Instance.new("Frame")
+local UICorner_15 = Instance.new("UICorner")
 local TextLabel_3 = Instance.new("TextLabel")
-local MainBox = Instance.new("Frame")
-local UICorner_20 = Instance.new("UICorner")
-local FlyButton = Instance.new("TextButton")
-local UICorner_21 = Instance.new("UICorner")
-local FunStuffBox = Instance.new("Frame")
-local UICorner_22 = Instance.new("UICorner")
-local LocationsBox = Instance.new("Frame")
-local UICorner_23 = Instance.new("UICorner")
+local HomeBox = Instance.new("Frame")
+local UICorner_16 = Instance.new("UICorner")
 local TextLabel_4 = Instance.new("TextLabel")
+local CombatBox = Instance.new("Frame")
+local UICorner_17 = Instance.new("UICorner")
+local TextLabel_5 = Instance.new("TextLabel")
+local MainBox = Instance.new("Frame")
+local UICorner_18 = Instance.new("UICorner")
+local FlyButton = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local FunStuffBox = Instance.new("Frame")
+local UICorner_20 = Instance.new("UICorner")
+local TextLabel_6 = Instance.new("TextLabel")
+local LocationsBox = Instance.new("Frame")
+local UICorner_21 = Instance.new("UICorner")
+local BankButton = Instance.new("TextButton")
+local UICorner_22 = Instance.new("UICorner")
+local BankButton_2 = Instance.new("TextButton")
+local UICorner_23 = Instance.new("UICorner")
 
 --Properties:
 
@@ -76,8 +78,8 @@ UICorner.Parent = velona
 velonaName.Name = "velonaName"
 velonaName.Parent = velona
 velonaName.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-velonaName.Position = UDim2.new(0.295001, 0, 0.0216357, 0)
-velonaName.Size = UDim2.new(0.681816876, 0, 0.0906531513, 0)
+velonaName.Position = UDim2.new(0.295001, 0, 0.0277402289, 0)
+velonaName.Size = UDim2.new(0.692633748, 0, 0.0906531513, 0)
 
 UICorner_2.CornerRadius = UDim.new(0, 9)
 UICorner_2.Parent = velonaName
@@ -85,12 +87,12 @@ UICorner_2.Parent = velonaName
 TextLabel.Parent = velonaName
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0.0591878109, 0, 0.41444996, 0)
-TextLabel.Size = UDim2.new(0.867642164, 0, 0.122256756, 0)
+TextLabel.Position = UDim2.new(0.0477264673, 0, 0.481788635, 0)
+TextLabel.Size = UDim2.new(0.847210288, 0, 0.021247033, 0)
 TextLabel.Font = Enum.Font.SourceSansSemibold
 TextLabel.Text = "velona"
 TextLabel.TextColor3 = Color3.fromRGB(85, 85, 85)
-TextLabel.TextSize = 44.000
+TextLabel.TextSize = 34.000
 TextLabel.TextWrapped = true
 
 middleBox.Name = "middleBox"
@@ -105,7 +107,7 @@ UICorner_3.Parent = middleBox
 OptionsBackround.Name = "OptionsBackround"
 OptionsBackround.Parent = velona
 OptionsBackround.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-OptionsBackround.Position = UDim2.new(0.0141101265, 0, 0.0225912631, 0)
+OptionsBackround.Position = UDim2.new(0.0105045037, 0, 0.028695792, 0)
 OptionsBackround.Size = UDim2.new(0.271627247, 0, 0.943070292, 0)
 
 UICorner_4.CornerRadius = UDim.new(0, 9)
@@ -114,42 +116,39 @@ UICorner_4.Parent = OptionsBackround
 RightBar.Name = "RightBar"
 RightBar.Parent = velona
 RightBar.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-RightBar.Position = UDim2.new(0.790719271, 0, 0.131505355, 0)
-RightBar.Size = UDim2.new(0.186098516, 0, 0.832616925, 0)
+RightBar.Position = UDim2.new(0.792273283, 0, 0.131505385, 0)
+RightBar.Size = UDim2.new(0.19536148, 0, 0.832616925, 0)
 
 UICorner_5.CornerRadius = UDim.new(0, 9)
 UICorner_5.Parent = RightBar
 
 ShowAvatar.Name = "ShowAvatar"
 ShowAvatar.Parent = RightBar
-ShowAvatar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ShowAvatar.BackgroundTransparency = 1.000
-ShowAvatar.Position = UDim2.new(0.0647610724, 0, 0.0332172737, 0)
-ShowAvatar.Size = UDim2.new(0, 86, 0, 91)
+ShowAvatar.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+ShowAvatar.Position = UDim2.new(0.0743659213, 0, 0.0298928078, 0)
+ShowAvatar.Size = UDim2.new(0, 91, 0, 90)
 ShowAvatar.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 
-UICorner_6.CornerRadius = UDim.new(0, 9)
+UICorner_6.CornerRadius = UDim.new(0, 90)
 UICorner_6.Parent = ShowAvatar
 
-NameUnderImage.Name = "NameUnderImage"
-NameUnderImage.Parent = RightBar
-NameUnderImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-NameUnderImage.BackgroundTransparency = 1.000
-NameUnderImage.Position = UDim2.new(-0.00260681356, 0, 0.398209721, 0)
-NameUnderImage.Size = UDim2.new(0, 99, 0, 44)
-NameUnderImage.Font = Enum.Font.SourceSans
-NameUnderImage.TextColor3 = Color3.fromRGB(150, 150, 150)
-NameUnderImage.TextScaled = true
-NameUnderImage.TextSize = 14.000
-NameUnderImage.TextWrapped = true
+NameUnderShowAvatar.Name = "NameUnderShowAvatar"
+NameUnderShowAvatar.Parent = RightBar
+NameUnderShowAvatar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NameUnderShowAvatar.BackgroundTransparency = 1.000
+NameUnderShowAvatar.Position = UDim2.new(0.0369123258, 0, 0.395913839, 0)
+NameUnderShowAvatar.Size = UDim2.new(0, 99, 0, 25)
+NameUnderShowAvatar.Font = Enum.Font.SourceSans
+NameUnderShowAvatar.TextColor3 = Color3.fromRGB(150, 150, 150)
+NameUnderShowAvatar.TextSize = 14.000
 
 CreditsButton.Name = "CreditsButton"
 CreditsButton.Parent = velona
 CreditsButton.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
-CreditsButton.Position = UDim2.new(0.0305455867, 0, 0.795581996, 0)
+CreditsButton.Position = UDim2.new(0.0234079622, 0, 0.795013547, 0)
 CreditsButton.Size = UDim2.new(0.241382986, 0, 0.104615048, 0)
 CreditsButton.Font = Enum.Font.Ubuntu
-CreditsButton.Text = "Credits"
+CreditsButton.Text = "Target"
 CreditsButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 CreditsButton.TextSize = 20.000
 CreditsButton.TextWrapped = true
@@ -160,7 +159,7 @@ UICorner_7.Parent = CreditsButton
 AnimationsButton.Name = "AnimationsButton"
 AnimationsButton.Parent = velona
 AnimationsButton.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
-AnimationsButton.Position = UDim2.new(0.0305455867, 0, 0.670043826, 0)
+AnimationsButton.Position = UDim2.new(0.0234079622, 0, 0.669475377, 0)
 AnimationsButton.Size = UDim2.new(0.241382986, 0, 0.104615048, 0)
 AnimationsButton.Font = Enum.Font.Ubuntu
 AnimationsButton.Text = "Animations"
@@ -180,14 +179,13 @@ X.Size = UDim2.new(0.0502881184, 0, 0.0871792063, 0)
 X.Font = Enum.Font.SourceSansSemibold
 X.Text = "X"
 X.TextColor3 = Color3.fromRGB(84, 84, 84)
-X.TextScaled = true
-X.TextSize = 14.000
+X.TextSize = 32.000
 X.TextWrapped = true
 
 LocationsButton.Name = "LocationsButton"
 LocationsButton.Parent = velona
 LocationsButton.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
-LocationsButton.Position = UDim2.new(0.0305455867, 0, 0.549736798, 0)
+LocationsButton.Position = UDim2.new(0.0234079622, 0, 0.549168348, 0)
 LocationsButton.Size = UDim2.new(0.241382986, 0, 0.104615048, 0)
 LocationsButton.Font = Enum.Font.Ubuntu
 LocationsButton.Text = "Locations"
@@ -201,7 +199,7 @@ UICorner_9.Parent = LocationsButton
 CombatButton.Name = "CombatButton"
 CombatButton.Parent = velona
 CombatButton.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
-CombatButton.Position = UDim2.new(0.0315512754, 0, 0.298660427, 0)
+CombatButton.Position = UDim2.new(0.0244136509, 0, 0.298091978, 0)
 CombatButton.Size = UDim2.new(0.241382986, 0, 0.104615048, 0)
 CombatButton.Font = Enum.Font.Ubuntu
 CombatButton.Text = "Combat"
@@ -215,7 +213,7 @@ UICorner_10.Parent = CombatButton
 MainButton.Name = "MainButton"
 MainButton.Parent = velona
 MainButton.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
-MainButton.Position = UDim2.new(0.0315512754, 0, 0.173122451, 0)
+MainButton.Position = UDim2.new(0.0244136509, 0, 0.172554016, 0)
 MainButton.Size = UDim2.new(0.241382986, 0, 0.104615048, 0)
 MainButton.Font = Enum.Font.Ubuntu
 MainButton.Text = "Main"
@@ -229,7 +227,7 @@ UICorner_11.Parent = MainButton
 FunStuffButton.Name = "FunStuffButton"
 FunStuffButton.Parent = velona
 FunStuffButton.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
-FunStuffButton.Position = UDim2.new(0.0305455867, 0, 0.424198627, 0)
+FunStuffButton.Position = UDim2.new(0.0234079622, 0, 0.423630178, 0)
 FunStuffButton.Size = UDim2.new(0.241382986, 0, 0.104615048, 0)
 FunStuffButton.Font = Enum.Font.Ubuntu
 FunStuffButton.Text = "Fun Stuff"
@@ -243,7 +241,7 @@ UICorner_12.Parent = FunStuffButton
 HomeButton.Name = "HomeButton"
 HomeButton.Parent = velona
 HomeButton.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
-HomeButton.Position = UDim2.new(0.0315512754, 0, 0.0440972298, 0)
+HomeButton.Position = UDim2.new(0.0244136509, 0, 0.0435287915, 0)
 HomeButton.Size = UDim2.new(0.241382986, 0, 0.104615048, 0)
 HomeButton.Font = Enum.Font.Ubuntu
 HomeButton.Text = "Home"
@@ -258,8 +256,8 @@ version.Name = "version"
 version.Parent = velona
 version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 version.BackgroundTransparency = 1.000
-version.Position = UDim2.new(0.849838912, 0, 0.871312082, 0)
-version.Size = UDim2.new(0.126025975, 0, 0.0916220546, 0)
+version.Position = UDim2.new(0.880289972, 0, 0.89962858, 0)
+version.Size = UDim2.new(0.108194612, 0, 0.0633056089, 0)
 version.Font = Enum.Font.SourceSans
 version.Text = "v 1.0"
 version.TextColor3 = Color3.fromRGB(150, 150, 150)
@@ -271,60 +269,30 @@ TextUnderOptions.Name = "TextUnderOptions"
 TextUnderOptions.Parent = velona
 TextUnderOptions.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextUnderOptions.BackgroundTransparency = 1.000
-TextUnderOptions.Position = UDim2.new(0.0379822999, 0, 0.895350337, 0)
+TextUnderOptions.Position = UDim2.new(0.0343766771, 0, 0.901454866, 0)
 TextUnderOptions.Size = UDim2.new(0.227770269, 0, 0.0669414997, 0)
 TextUnderOptions.Font = Enum.Font.SourceSans
 TextUnderOptions.TextColor3 = Color3.fromRGB(150, 150, 150)
 TextUnderOptions.TextSize = 14.000
 
-CreditsBox.Name = "CreditsBox"
-CreditsBox.Parent = velona
-CreditsBox.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-CreditsBox.Position = UDim2.new(0.295001239, 0, 0.133092895, 0)
-CreditsBox.Size = UDim2.new(0.485540926, 0, 0.831029534, 0)
-CreditsBox.Visible = false
+TargetBox.Name = "TargetBox"
+TargetBox.Parent = velona
+TargetBox.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+TargetBox.Position = UDim2.new(0.295001239, 0, 0.133092895, 0)
+TargetBox.Size = UDim2.new(0.485540926, 0, 0.831029534, 0)
+TargetBox.Visible = false
 
 UICorner_14.CornerRadius = UDim.new(0, 9)
-UICorner_14.Parent = CreditsBox
+UICorner_14.Parent = TargetBox
 
-uswaitcredits.Name = "uswait credits"
-uswaitcredits.Parent = CreditsBox
-uswaitcredits.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
-uswaitcredits.Position = UDim2.new(0.0250000674, 0, 0.030000031, 0)
-uswaitcredits.Size = UDim2.new(0, 244, 0, 35)
-uswaitcredits.Font = Enum.Font.SourceSans
-uswaitcredits.Text = "uswait - idk"
-uswaitcredits.TextColor3 = Color3.fromRGB(150, 150, 150)
-uswaitcredits.TextScaled = true
-uswaitcredits.TextSize = 14.000
-uswaitcredits.TextWrapped = true
-
-UICorner_15.CornerRadius = UDim.new(0, 9)
-UICorner_15.Parent = uswaitcredits
-
-avycredits.Name = "avy credits"
-avycredits.Parent = CreditsBox
-avycredits.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
-avycredits.Position = UDim2.new(0.0250000674, 0, 0.217024773, 0)
-avycredits.Size = UDim2.new(0, 244, 0, 38)
-avycredits.Font = Enum.Font.SourceSans
-avycredits.Text = "avy - funding"
-avycredits.TextColor3 = Color3.fromRGB(150, 150, 150)
-avycredits.TextScaled = true
-avycredits.TextSize = 14.000
-avycredits.TextWrapped = true
-
-UICorner_16.CornerRadius = UDim.new(0, 9)
-UICorner_16.Parent = avycredits
-
-middleBox_2.Name = "middleBox"
-middleBox_2.Parent = velona
-middleBox_2.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-middleBox_2.Position = UDim2.new(0.295001209, 0, 0.148712292, 0)
-middleBox_2.Size = UDim2.new(0.485540926, 0, 0.815410078, 0)
-
-UICorner_17.CornerRadius = UDim.new(0, 9)
-UICorner_17.Parent = middleBox_2
+TextLabel_2.Parent = TargetBox
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.Position = UDim2.new(0.307790995, 0, 0.0466896668, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "target"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 14.000
 
 AnimationsBox.Name = "AnimationsBox"
 AnimationsBox.Parent = velona
@@ -333,17 +301,36 @@ AnimationsBox.Position = UDim2.new(0.295001239, 0, 0.133092895, 0)
 AnimationsBox.Size = UDim2.new(0.485540926, 0, 0.831029534, 0)
 AnimationsBox.Visible = false
 
-UICorner_18.CornerRadius = UDim.new(0, 9)
-UICorner_18.Parent = AnimationsBox
+UICorner_15.CornerRadius = UDim.new(0, 9)
+UICorner_15.Parent = AnimationsBox
 
-TextLabel_2.Parent = AnimationsBox
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.Position = UDim2.new(0.307790995, 0, 0.0466896668, 0)
-TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
-TextLabel_2.Font = Enum.Font.SourceSans
-TextLabel_2.Text = "animations"
-TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.TextSize = 14.000
+TextLabel_3.Parent = AnimationsBox
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.Position = UDim2.new(0.307790995, 0, 0.0466896668, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "animations"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextSize = 14.000
+
+HomeBox.Name = "HomeBox"
+HomeBox.Parent = velona
+HomeBox.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+HomeBox.Position = UDim2.new(0.295001239, 0, 0.133092895, 0)
+HomeBox.Size = UDim2.new(0.485540926, 0, 0.831029534, 0)
+HomeBox.Visible = false
+
+UICorner_16.CornerRadius = UDim.new(0, 9)
+UICorner_16.Parent = HomeBox
+
+TextLabel_4.Parent = HomeBox
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.Position = UDim2.new(0.307790995, 0, 0.0466896668, 0)
+TextLabel_4.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "home"
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextSize = 14.000
 
 CombatBox.Name = "CombatBox"
 CombatBox.Parent = velona
@@ -352,17 +339,17 @@ CombatBox.Position = UDim2.new(0.295001239, 0, 0.133092895, 0)
 CombatBox.Size = UDim2.new(0.485540926, 0, 0.831029534, 0)
 CombatBox.Visible = false
 
-UICorner_19.CornerRadius = UDim.new(0, 9)
-UICorner_19.Parent = CombatBox
+UICorner_17.CornerRadius = UDim.new(0, 9)
+UICorner_17.Parent = CombatBox
 
-TextLabel_3.Parent = CombatBox
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.Position = UDim2.new(0.307790995, 0, 0.0466896668, 0)
-TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
-TextLabel_3.Font = Enum.Font.SourceSans
-TextLabel_3.Text = "combat"
-TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_3.TextSize = 14.000
+TextLabel_5.Parent = CombatBox
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.Position = UDim2.new(0.307790995, 0, 0.0466896668, 0)
+TextLabel_5.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "combat"
+TextLabel_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.TextSize = 14.000
 
 MainBox.Name = "MainBox"
 MainBox.Parent = velona
@@ -371,8 +358,8 @@ MainBox.Position = UDim2.new(0.295001239, 0, 0.13309291, 0)
 MainBox.Size = UDim2.new(0.485540926, 0, 0.832568526, 0)
 MainBox.Visible = false
 
-UICorner_20.CornerRadius = UDim.new(0, 9)
-UICorner_20.Parent = MainBox
+UICorner_18.CornerRadius = UDim.new(0, 9)
+UICorner_18.Parent = MainBox
 
 FlyButton.Name = "FlyButton"
 FlyButton.Parent = MainBox
@@ -386,8 +373,8 @@ FlyButton.TextScaled = true
 FlyButton.TextSize = 14.000
 FlyButton.TextWrapped = true
 
-UICorner_21.CornerRadius = UDim.new(0, 9)
-UICorner_21.Parent = FlyButton
+UICorner_19.CornerRadius = UDim.new(0, 9)
+UICorner_19.Parent = FlyButton
 
 FunStuffBox.Name = "FunStuffBox"
 FunStuffBox.Parent = velona
@@ -396,31 +383,60 @@ FunStuffBox.Position = UDim2.new(0.295001209, 0, 0.133092865, 0)
 FunStuffBox.Size = UDim2.new(0.485540926, 0, 0.831029594, 0)
 FunStuffBox.Visible = false
 
-UICorner_22.CornerRadius = UDim.new(0, 9)
-UICorner_22.Parent = FunStuffBox
+UICorner_20.CornerRadius = UDim.new(0, 9)
+UICorner_20.Parent = FunStuffBox
+
+TextLabel_6.Parent = FunStuffBox
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.Position = UDim2.new(0.307790995, 0, 0.0466896668, 0)
+TextLabel_6.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = "funstuff"
+TextLabel_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.TextSize = 14.000
 
 LocationsBox.Name = "LocationsBox"
 LocationsBox.Parent = velona
 LocationsBox.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
 LocationsBox.Position = UDim2.new(0.295001239, 0, 0.133092895, 0)
 LocationsBox.Size = UDim2.new(0.485540926, 0, 0.831029534, 0)
-LocationsBox.Visible = false
+
+UICorner_21.CornerRadius = UDim.new(0, 9)
+UICorner_21.Parent = LocationsBox
+
+BankButton.Name = "BankButton"
+BankButton.Parent = LocationsBox
+BankButton.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+BankButton.Position = UDim2.new(0.0440040343, 0, 0.195581838, 0)
+BankButton.Size = UDim2.new(0, 244, 0, 38)
+BankButton.Font = Enum.Font.SourceSans
+BankButton.Text = "Bank"
+BankButton.TextColor3 = Color3.fromRGB(150, 150, 150)
+BankButton.TextScaled = true
+BankButton.TextSize = 14.000
+BankButton.TextWrapped = true
+
+UICorner_22.CornerRadius = UDim.new(0, 9)
+UICorner_22.Parent = BankButton
+
+BankButton_2.Name = "BankButton"
+BankButton_2.Parent = LocationsBox
+BankButton_2.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+BankButton_2.Position = UDim2.new(0.0440040343, 0, 0.0303026494, 0)
+BankButton_2.Size = UDim2.new(0, 244, 0, 38)
+BankButton_2.Font = Enum.Font.SourceSans
+BankButton_2.Text = "Bank"
+BankButton_2.TextColor3 = Color3.fromRGB(150, 150, 150)
+BankButton_2.TextScaled = true
+BankButton_2.TextSize = 14.000
+BankButton_2.TextWrapped = true
 
 UICorner_23.CornerRadius = UDim.new(0, 9)
-UICorner_23.Parent = LocationsBox
-
-TextLabel_4.Parent = LocationsBox
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.Position = UDim2.new(0.307790995, 0, 0.0466896668, 0)
-TextLabel_4.Size = UDim2.new(0, 200, 0, 50)
-TextLabel_4.Font = Enum.Font.SourceSans
-TextLabel_4.Text = "Locations"
-TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_4.TextSize = 14.000
+UICorner_23.Parent = BankButton_2
 
 -- Scripts:
 
-local function NYPTEJI_fake_script() -- velona.V to show/hide 
+local function QJAM_fake_script() -- velona.V to show/hide 
 	local script = Instance.new('LocalScript', velona)
 
 	player = game.Players.LocalPlayer
@@ -436,8 +452,8 @@ local function NYPTEJI_fake_script() -- velona.V to show/hide
 	end)
 	
 end
-coroutine.wrap(NYPTEJI_fake_script)()
-local function KMSDQX_fake_script() -- ShowAvatar.LocalScript 
+coroutine.wrap(QJAM_fake_script)()
+local function TKTTHD_fake_script() -- ShowAvatar.LocalScript 
 	local script = Instance.new('LocalScript', ShowAvatar)
 
 	local Players = game:GetService("Players")
@@ -454,140 +470,139 @@ local function KMSDQX_fake_script() -- ShowAvatar.LocalScript
 	
 	
 end
-coroutine.wrap(KMSDQX_fake_script)()
-local function FBMS_fake_script() -- NameUnderImage.LocalScript 
-	local script = Instance.new('LocalScript', NameUnderImage)
+coroutine.wrap(TKTTHD_fake_script)()
+local function XXHM_fake_script() -- NameUnderShowAvatar.LocalScript 
+	local script = Instance.new('LocalScript', NameUnderShowAvatar)
 
 	local player = game.Players.LocalPlayer
 	
 	if player then
-		script.Parent.Text = "hello " ..player.Name.."!"
+		script.Parent.Text = "Welcome "..player.Name.."!"
 	end
 	
-	
 end
-coroutine.wrap(FBMS_fake_script)()
-local function OPGPYNA_fake_script() -- CreditsButton.GUIHolder 
+coroutine.wrap(XXHM_fake_script)()
+local function PYNXKDS_fake_script() -- CreditsButton.LocalScript 
 	local script = Instance.new('LocalScript', CreditsButton)
 
-	local button = script.Parent
+	local b = script.Parent
 	
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.HomeBox.Visible = false
+	b.MouseButton1Click:Connect(function()
 		script.Parent.Parent.MainBox.Visible = false
 		script.Parent.Parent.CombatBox.Visible = false
 		script.Parent.Parent.FunStuffBox.Visible = false
 		script.Parent.Parent.LocationsBox.Visible = false
+		script.Parent.Parent.TargetBox.Visible = true
+		script.Parent.Parent.HomeBox.Visible = false
 		script.Parent.Parent.AnimationsBox.Visible = false
-		script.Parent.Parent.CreditsBox.Visible = true
 	end)
 end
-coroutine.wrap(OPGPYNA_fake_script)()
-local function HTQXQ_fake_script() -- AnimationsButton.GUIHolder 
+coroutine.wrap(PYNXKDS_fake_script)()
+local function MWGZTAK_fake_script() -- AnimationsButton.LocalScript 
 	local script = Instance.new('LocalScript', AnimationsButton)
 
-	local button = script.Parent
+	local b = script.Parent
 	
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.HomeBox.Visible = false
+	b.MouseButton1Click:Connect(function()
 		script.Parent.Parent.MainBox.Visible = false
 		script.Parent.Parent.CombatBox.Visible = false
 		script.Parent.Parent.FunStuffBox.Visible = false
 		script.Parent.Parent.LocationsBox.Visible = false
+		script.Parent.Parent.TargetBox.Visible = false
+		script.Parent.Parent.HomeBox.Visible = false
 		script.Parent.Parent.AnimationsBox.Visible = true
-		script.Parent.Parent.CreditsBox.Visible = false
 	end)
 end
-coroutine.wrap(HTQXQ_fake_script)()
-local function KJWGQ_fake_script() -- X.CloseGUI 
+coroutine.wrap(MWGZTAK_fake_script)()
+local function AISRTC_fake_script() -- X.CloseGUI 
 	local script = Instance.new('LocalScript', X)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(KJWGQ_fake_script)()
-local function IMTRS_fake_script() -- LocationsButton.GUIHolder 
+coroutine.wrap(AISRTC_fake_script)()
+local function UHWNSB_fake_script() -- LocationsButton.LocalScript 
 	local script = Instance.new('LocalScript', LocationsButton)
 
-	local button = script.Parent
+	local b = script.Parent
 	
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.HomeBox.Visible = false
+	b.MouseButton1Click:Connect(function()
 		script.Parent.Parent.MainBox.Visible = false
 		script.Parent.Parent.CombatBox.Visible = false
 		script.Parent.Parent.FunStuffBox.Visible = false
 		script.Parent.Parent.LocationsBox.Visible = true
+		script.Parent.Parent.TargetBox.Visible = false
+		script.Parent.Parent.HomeBox.Visible = false
 		script.Parent.Parent.AnimationsBox.Visible = false
-		script.Parent.Parent.CreditsBox.Visible = false
 	end)
 end
-coroutine.wrap(IMTRS_fake_script)()
-local function POSNZT_fake_script() -- CombatButton.GUIHolder 
+coroutine.wrap(UHWNSB_fake_script)()
+local function KZJXVQZ_fake_script() -- CombatButton.LocalScript 
 	local script = Instance.new('LocalScript', CombatButton)
 
-	local button = script.Parent
+	local b = script.Parent
 	
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.HomeBox.Visible = false
+	b.MouseButton1Click:Connect(function()
 		script.Parent.Parent.MainBox.Visible = false
 		script.Parent.Parent.CombatBox.Visible = true
 		script.Parent.Parent.FunStuffBox.Visible = false
 		script.Parent.Parent.LocationsBox.Visible = false
+		script.Parent.Parent.TargetBox.Visible = false
+		script.Parent.Parent.HomeBox.Visible = false
 		script.Parent.Parent.AnimationsBox.Visible = false
-		script.Parent.Parent.CreditsBox.Visible = false
 	end)
 end
-coroutine.wrap(POSNZT_fake_script)()
-local function PNXHTVZ_fake_script() -- MainButton.GUIHolder 
+coroutine.wrap(KZJXVQZ_fake_script)()
+local function ZNRKQB_fake_script() -- MainButton.LocalScript 
 	local script = Instance.new('LocalScript', MainButton)
 
-	local button = script.Parent
+	local b = script.Parent
 	
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.HomeBox.Visible = false
+	b.MouseButton1Click:Connect(function()
 		script.Parent.Parent.MainBox.Visible = true
 		script.Parent.Parent.CombatBox.Visible = false
 		script.Parent.Parent.FunStuffBox.Visible = false
 		script.Parent.Parent.LocationsBox.Visible = false
+		script.Parent.Parent.TargetBox.Visible = false
+		script.Parent.Parent.HomeBox.Visible = false
 		script.Parent.Parent.AnimationsBox.Visible = false
-		script.Parent.Parent.CreditsBox.Visible = false
 	end)
 end
-coroutine.wrap(PNXHTVZ_fake_script)()
-local function VVBMCU_fake_script() -- FunStuffButton.GUIHolder 
+coroutine.wrap(ZNRKQB_fake_script)()
+local function AKCZ_fake_script() -- FunStuffButton.LocalScript 
 	local script = Instance.new('LocalScript', FunStuffButton)
 
-	local button = script.Parent
+	local b = script.Parent
 	
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.HomeBox.Visible = false
+	b.MouseButton1Click:Connect(function()
 		script.Parent.Parent.MainBox.Visible = false
 		script.Parent.Parent.CombatBox.Visible = false
 		script.Parent.Parent.FunStuffBox.Visible = true
 		script.Parent.Parent.LocationsBox.Visible = false
+		script.Parent.Parent.TargetBox.Visible = false
+		script.Parent.Parent.HomeBox.Visible = false
 		script.Parent.Parent.AnimationsBox.Visible = false
-		script.Parent.Parent.CreditsBox.Visible = false
 	end)
 end
-coroutine.wrap(VVBMCU_fake_script)()
-local function DHHF_fake_script() -- HomeButton.GUIHolder 
+coroutine.wrap(AKCZ_fake_script)()
+local function AGZRB_fake_script() -- HomeButton.LocalScript 
 	local script = Instance.new('LocalScript', HomeButton)
 
-	local button = script.Parent
+	local b = script.Parent
 	
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.HomeBox.Visible = true
+	b.MouseButton1Click:Connect(function()
 		script.Parent.Parent.MainBox.Visible = false
 		script.Parent.Parent.CombatBox.Visible = false
 		script.Parent.Parent.FunStuffBox.Visible = false
 		script.Parent.Parent.LocationsBox.Visible = false
+		script.Parent.Parent.TargetBox.Visible = false
+		script.Parent.Parent.HomeBox.Visible = true
 		script.Parent.Parent.AnimationsBox.Visible = false
-		script.Parent.Parent.CreditsBox.Visible = false
 	end)
 end
-coroutine.wrap(DHHF_fake_script)()
-local function DIST_fake_script() -- TextUnderOptions.LocalScript 
+coroutine.wrap(AGZRB_fake_script)()
+local function GIJXUE_fake_script() -- TextUnderOptions.LocalScript 
 	local script = Instance.new('LocalScript', TextUnderOptions)
 
 	local player = game.Players.LocalPlayer
@@ -597,8 +612,8 @@ local function DIST_fake_script() -- TextUnderOptions.LocalScript
 	end
 	
 end
-coroutine.wrap(DIST_fake_script)()
-local function ABWMP_fake_script() -- velona.DraggableGui 
+coroutine.wrap(GIJXUE_fake_script)()
+local function YYQI_fake_script() -- velona.DraggableGui 
 	local script = Instance.new('LocalScript', velona)
 
 	local UIS = game:GetService('UserInputService')
@@ -637,8 +652,8 @@ local function ABWMP_fake_script() -- velona.DraggableGui
 	end)
 	
 end
-coroutine.wrap(ABWMP_fake_script)()
-local function VCATPQO_fake_script() -- FlyButton.FlyScript 
+coroutine.wrap(YYQI_fake_script)()
+local function LYGLAVS_fake_script() -- FlyButton.FlyScript 
 	local script = Instance.new('LocalScript', FlyButton)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -753,4 +768,4 @@ local function VCATPQO_fake_script() -- FlyButton.FlyScript
 	end)
 	
 end
-coroutine.wrap(VCATPQO_fake_script)()
+coroutine.wrap(LYGLAVS_fake_script)()
